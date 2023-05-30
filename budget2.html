@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUDGET APP</title>
+    <link rel="stylesheet" href="budgetappstyle.css">
+</head>
+<body>
+
+    <div class="wrapper">
+    <div class="container"> 
+        <div class="sub-container"> 
+        
+
+            <div class="total-amount-container> 
+            <h1>BUDGET</h1>
+    <p class="hide error" id="budget-error">
+        VALUE canot be empty or negative
+    </p>
+    <input type="number" id="total-amount" placeholder="enter your budget"/>
+
+    <button class="submit" id="totalbudgetbutton">
+        SET BUDGET
+    </button>
+</div>
+
+<div class="user-amount-container">
+
+<h1>TOTAL EXPENSES</h1> 
+    <p class="hide error" id="product-title-error">
+             VALUE canot be empty
+    </p>
+    <input type="text" class="product-title" id="product-title" placeholder="Enter Description"/>
+
+    <input type="number" id="user-amount" placeholder="enter expense amount"/>
+
+<button class="submit" id="check-amount"> 
+        Check Amount
+    </button>
+</div>
+</div>
+
+<!-- OUTPUT -->
+ 
+<div class="outputdiv">
+
+<div>
+<p>TOTAL BUDGET</p>
+<span id="tbudget">0</span>
+</div>
+
+
+<div>
+    <p>EXPENSES</p>
+    <span id="texpense">0</span>
+    </div>
+
+    <div>
+        <p>BALANCE</p>
+        <span id="tbalance">0</span>
+        </div>
+        
+</div>
+
+  
+
+
+<!-- masterdiv -->
+</div> 
+<script src="./budget2.js"></script>
+</body>
+</html>
